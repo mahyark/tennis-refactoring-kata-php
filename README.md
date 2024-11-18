@@ -1,31 +1,24 @@
 # Tennis Kata
 
-Esta kata trata de modelar un partido de tenis :).
+This kata is about modeling a tennis match :).
 
-La forma de llevar el tanteo en tenis puede ser complicado, por este motivo la ATP nos ha contratado para construir un 
-marcador que sea capaz de mostrar el resultado actual de un partido.
+Scorekeeping in tennis can be tricky, which is why the ATP has hired us to build a scoreboard that is able to display the current result of a match.
 
-Nuestro trabajo consiste en escribir un programa "TennisGame" que contenga la lógica del sistema de tanteo y que muestre
-el resultado correcto en formato de texto para mostrarlo en las pantallas.
+Our job is to write a "TennisGame" program that contains the scoring system logic and displays the correct result in text format for display on the screens.
 
-Cuando un jugador gane un punto, el programa contendrá un método al que se le podrá llamar para poder indicarle qué jugador
-ha sido el ganador del punto. Además, el sistema recibirá llamadas de las pantallas a un método "score()" que devolverá
-cuál es el resultado actual. Este método debería devolver un texto con el resultado.
+When a player wins a point, the program will contain a method that can be called to tell it which player won the point. In addition, the system will receive calls from the screens to a "score()" method that will return the current score. This method should return a text with the result.
 
-Este es un resumen explicamos cómo funciona el tanteo en tenis, pero si necesitas más información puedes visitar el siguiente  
-[enlace](https://en.wikipedia.org/wiki/Tennis#Scoring):
+This is a summary explaining how scoring works in tennis, but if you need more information you can visit the following
+[link](https://en.wikipedia.org/wiki/Tennis#Scoring):
 
-1. Un juego se gana cuando uno de los jugadores gana al menos 4 puntos en total y al menos dos puntos más que el oponente.
-2. El tanteo parcial se lleva de una manera un tanto (¡BOOM!) "especial": respectivamente "Love", "Fifteen", "Thirty", y "Forty".
-3. Si al menos cada uno de los jugadores ha ganado 3 puntos y el resultado está empatado, el resultado es "Deuce".
-4. Si al menos cada uno de los jugadores ha ganado 3 puntos y uno de lo jugadores tiene un punto más que su rival, el 
-resultado del juego es "Advantage" para el jugador que va en cabeza.
+1. A game is won when one of the players wins at least 4 points in total and at least two points more than the opponent.
+2. The partial scoring is carried out in a somewhat (BOOM!) "special" way: respectively "Love", "Fifteen", "Thirty", and "Forty".
+3. If at least each player has won 3 points and the score is tied, the result is "Deuce".
+4. If at least each of the players has won 3 points and one of the players has one more point than his opponent, the result of the game is "Advantage" for the player in the lead.
 
-Sólo necesitas reportar el resultado del juego actual. Este es un primer desarrollo, por lo tanto, ahora los sets y 
-juegos quedan fuera del contexto. ¡Más vale!
+You only need to report the result of the current game. This is a first development, so sets and games are now out of context.
 
-
-# Ejecutar los tests
+# Run the tests
 
 1. Install [composer](https://getcomposer.org) locally:
 
@@ -38,6 +31,6 @@ juegos quedan fuera del contexto. ¡Más vale!
 	`./vendor/bin/phpunit`
 
 
-# Autor original
+# Original author
 
-Este repositorio es simplemente una versión adaptada del repositorio original de Emily Bache's ubicado en https://github.com/emilybache/Tennis-Refactoring-Kata
+This repository is simply an adapted version of Emily Bache's original repository located at https://github.com/emilybache/Tennis-Refactoring-Kata
